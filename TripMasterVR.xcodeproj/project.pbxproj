@@ -15,6 +15,7 @@
 		25DD40521D9A588300212265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DD40501D9A588300212265 /* LaunchScreen.storyboard */; };
 		25DD405D1D9A588400212265 /* TripMasterVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD405C1D9A588400212265 /* TripMasterVRTests.m */; };
 		25DD40681D9A588400212265 /* TripMasterVRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40671D9A588400212265 /* TripMasterVRUITests.m */; };
+		25DD40781D9A72D900212265 /* Calculadora.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40771D9A72D900212265 /* Calculadora.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		25DD40631D9A588400212265 /* TripMasterVRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripMasterVRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD40671D9A588400212265 /* TripMasterVRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripMasterVRUITests.m; sourceTree = "<group>"; };
 		25DD40691D9A588400212265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25DD40761D9A72D900212265 /* Calculadora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculadora.h; sourceTree = "<group>"; };
+		25DD40771D9A72D900212265 /* Calculadora.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculadora.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		25DD40411D9A588300212265 /* TripMasterVR */ = {
 			isa = PBXGroup;
 			children = (
+				25DD40751D9A721300212265 /* libreria */,
 				25DD40451D9A588300212265 /* AppDelegate.h */,
 				25DD40461D9A588300212265 /* AppDelegate.m */,
 				25DD40481D9A588300212265 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				25DD40691D9A588400212265 /* Info.plist */,
 			);
 			path = TripMasterVRUITests;
+			sourceTree = "<group>";
+		};
+		25DD40751D9A721300212265 /* libreria */ = {
+			isa = PBXGroup;
+			children = (
+				25DD40761D9A72D900212265 /* Calculadora.h */,
+				25DD40771D9A72D900212265 /* Calculadora.m */,
+			);
+			name = libreria;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				25DD404A1D9A588300212265 /* ViewController.m in Sources */,
 				25DD40471D9A588300212265 /* AppDelegate.m in Sources */,
 				25DD40441D9A588300212265 /* main.m in Sources */,
+				25DD40781D9A72D900212265 /* Calculadora.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
