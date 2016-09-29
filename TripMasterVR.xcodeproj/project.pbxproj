@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		259206201D9D1A5200B68D56 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2592061F1D9D1A5200B68D56 /* Login.storyboard */; };
 		25DD40441D9A588300212265 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40431D9A588300212265 /* main.m */; };
 		25DD40471D9A588300212265 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40461D9A588300212265 /* AppDelegate.m */; };
 		25DD404A1D9A588300212265 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40491D9A588300212265 /* ViewController.m */; };
 		25DD404D1D9A588300212265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DD404B1D9A588300212265 /* Main.storyboard */; };
 		25DD404F1D9A588300212265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25DD404E1D9A588300212265 /* Assets.xcassets */; };
-		25DD40521D9A588300212265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25DD40501D9A588300212265 /* LaunchScreen.storyboard */; };
 		25DD405D1D9A588400212265 /* TripMasterVRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD405C1D9A588400212265 /* TripMasterVRTests.m */; };
 		25DD40681D9A588400212265 /* TripMasterVRUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40671D9A588400212265 /* TripMasterVRUITests.m */; };
-		25DD40781D9A72D900212265 /* Calculadora.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40771D9A72D900212265 /* Calculadora.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2592061F1D9D1A5200B68D56 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		25DD403F1D9A588300212265 /* TripMasterVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMasterVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD40431D9A588300212265 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		25DD40451D9A588300212265 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,7 +44,6 @@
 		25DD40491D9A588300212265 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		25DD404C1D9A588300212265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25DD404E1D9A588300212265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		25DD40511D9A588300212265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25DD40531D9A588300212265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25DD40581D9A588400212265 /* TripMasterVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripMasterVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD405C1D9A588400212265 /* TripMasterVRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripMasterVRTests.m; sourceTree = "<group>"; };
@@ -52,8 +51,6 @@
 		25DD40631D9A588400212265 /* TripMasterVRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripMasterVRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD40671D9A588400212265 /* TripMasterVRUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripMasterVRUITests.m; sourceTree = "<group>"; };
 		25DD40691D9A588400212265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		25DD40761D9A72D900212265 /* Calculadora.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculadora.h; sourceTree = "<group>"; };
-		25DD40771D9A72D900212265 /* Calculadora.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculadora.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +78,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2592061B1D9D18C200B68D56 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				2592061C1D9D18CD00B68D56 /* Login */,
+			);
+			name = Features;
+			sourceTree = "<group>";
+		};
+		2592061C1D9D18CD00B68D56 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2592061F1D9D1A5200B68D56 /* Login.storyboard */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 		25DD40361D9A588300212265 = {
 			isa = PBXGroup;
 			children = (
@@ -104,14 +117,13 @@
 		25DD40411D9A588300212265 /* TripMasterVR */ = {
 			isa = PBXGroup;
 			children = (
-				25DD40751D9A721300212265 /* libreria */,
+				2592061B1D9D18C200B68D56 /* Features */,
 				25DD40451D9A588300212265 /* AppDelegate.h */,
 				25DD40461D9A588300212265 /* AppDelegate.m */,
 				25DD40481D9A588300212265 /* ViewController.h */,
 				25DD40491D9A588300212265 /* ViewController.m */,
 				25DD404B1D9A588300212265 /* Main.storyboard */,
 				25DD404E1D9A588300212265 /* Assets.xcassets */,
-				25DD40501D9A588300212265 /* LaunchScreen.storyboard */,
 				25DD40531D9A588300212265 /* Info.plist */,
 				25DD40421D9A588300212265 /* Supporting Files */,
 			);
@@ -142,15 +154,6 @@
 				25DD40691D9A588400212265 /* Info.plist */,
 			);
 			path = TripMasterVRUITests;
-			sourceTree = "<group>";
-		};
-		25DD40751D9A721300212265 /* libreria */ = {
-			isa = PBXGroup;
-			children = (
-				25DD40761D9A72D900212265 /* Calculadora.h */,
-				25DD40771D9A72D900212265 /* Calculadora.m */,
-			);
-			name = libreria;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,9 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25DD40521D9A588300212265 /* LaunchScreen.storyboard in Resources */,
 				25DD404F1D9A588300212265 /* Assets.xcassets in Resources */,
 				25DD404D1D9A588300212265 /* Main.storyboard in Resources */,
+				259206201D9D1A5200B68D56 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +289,6 @@
 				25DD404A1D9A588300212265 /* ViewController.m in Sources */,
 				25DD40471D9A588300212265 /* AppDelegate.m in Sources */,
 				25DD40441D9A588300212265 /* main.m in Sources */,
-				25DD40781D9A72D900212265 /* Calculadora.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +330,6 @@
 				25DD404C1D9A588300212265 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		25DD40501D9A588300212265 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25DD40511D9A588300212265 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -512,6 +506,7 @@
 				25DD406E1D9A588400212265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25DD406F1D9A588400212265 /* Build configuration list for PBXNativeTarget "TripMasterVRTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +515,7 @@
 				25DD40711D9A588400212265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25DD40721D9A588400212265 /* Build configuration list for PBXNativeTarget "TripMasterVRUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +524,7 @@
 				25DD40741D9A588400212265 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
