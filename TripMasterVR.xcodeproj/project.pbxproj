@@ -36,7 +36,8 @@
 		2C4BC7441D9D218300E9A9A9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4BC7431D9D218300E9A9A9 /* libresolv.tbd */; };
 		2C4BC7461D9D219200E9A9A9 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4BC7451D9D219200E9A9A9 /* libxml2.tbd */; };
 		2C4BC7481D9D219A00E9A9A9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4BC7471D9D219A00E9A9A9 /* libz.tbd */; };
-		2C4BC74E1D9D257C00E9A9A9 /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4BC74D1D9D257C00E9A9A9 /* Quickblox.framework */; };
+		2C7A6BE61DA39A1B00D84F6E /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */; };
+		2C7A6BE81DA39D9300D84F6E /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +99,9 @@
 		2C4BC7431D9D218300E9A9A9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		2C4BC7451D9D219200E9A9A9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		2C4BC7471D9D219A00E9A9A9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		2C4BC74D1D9D257C00E9A9A9 /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = Frameworks/Quickblox.framework; sourceTree = "<group>"; };
+		2C7A6BE41DA3975700D84F6E /* TripMaster.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripMaster.pch; sourceTree = "<group>"; };
+		2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = Frameworks/Quickblox.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C4BC74E1D9D257C00E9A9A9 /* Quickblox.framework in Frameworks */,
+				2C7A6BE81DA39D9300D84F6E /* Quickblox.framework in Frameworks */,
+				2C7A6BE61DA39A1B00D84F6E /* libz.1.2.5.tbd in Frameworks */,
 				2C4BC7481D9D219A00E9A9A9 /* libz.tbd in Frameworks */,
 				2C4BC7461D9D219200E9A9A9 /* libxml2.tbd in Frameworks */,
 				2C4BC7441D9D218300E9A9A9 /* libresolv.tbd in Frameworks */,
@@ -171,7 +175,8 @@
 		25DD40361D9A588300212265 = {
 			isa = PBXGroup;
 			children = (
-				2C4BC74D1D9D257C00E9A9A9 /* Quickblox.framework */,
+				2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */,
+				2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */,
 				2C4BC7471D9D219A00E9A9A9 /* libz.tbd */,
 				2C4BC7451D9D219200E9A9A9 /* libxml2.tbd */,
 				2C4BC7431D9D218300E9A9A9 /* libresolv.tbd */,
@@ -208,6 +213,7 @@
 		25DD40411D9A588300212265 /* TripMasterVR */ = {
 			isa = PBXGroup;
 			children = (
+				2C7A6BE31DA3948900D84F6E /* Icons */,
 				2592061B1D9D18C200B68D56 /* Features */,
 				25DD40451D9A588300212265 /* AppDelegate.h */,
 				25DD40461D9A588300212265 /* AppDelegate.m */,
@@ -225,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				25DD40431D9A588300212265 /* main.m */,
+				2C7A6BE41DA3975700D84F6E /* TripMaster.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -253,6 +260,13 @@
 				2C4BC7271D9D1EB100E9A9A9 /* Profile.storyboard */,
 			);
 			name = Profile;
+			sourceTree = "<group>";
+		};
+		2C7A6BE31DA3948900D84F6E /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
