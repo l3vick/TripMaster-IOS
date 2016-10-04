@@ -1,0 +1,29 @@
+//
+//  TripMaster.pch
+//  TripMasterVR
+//
+//  Created by Marcos Stival Tomé on 4/10/16.
+//  Copyright © 2016 Pablo Rojas Cifre. All rights reserved.
+//
+
+#import <Avaibility.h>
+
+#ifndef TripMaster_pch
+#define TripMaster_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Quartzcore/Quartzcore.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <SystemConfiguration/SCNetworkReachability.h>
+#import <CoreLocation/CoreLocation.h>
+#import <CoreData/CoreData.h>
+#import <MapKit/MapKit.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import "Definitions.h"
+#import <Quickblox/Quickblox.h>
+
+
+#endif /* TripMaster_pch */
