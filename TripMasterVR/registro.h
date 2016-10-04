@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface registro : UIViewController
+@interface registro : UIViewController{
+    
+    IBOutlet UITextField *user;
+    IBOutlet UITextField *passw;
+    IBOutlet UITextField *passwre;
+    IBOutlet UITextField *email;
+    IBOutlet UIButton *aceptar;
+    IBOutlet UIButton *cancelar;
+}
 
 @end

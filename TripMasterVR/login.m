@@ -7,7 +7,32 @@
 //
 
 #import "login.h"
+#import "AppDelegate.h"
+
+@interface login ()
+
+@end
 
 @implementation login
 
-@end
+
+
+-(AppDelegate *)getAppDelegate{
+    return (AppDelegate *) [[UIApplication sharedApplication] delegate];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    // UIImage *imagen1 = [UIImage imageNamed:@"world-monuments-collage-wall-sticker-7135.png"];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+-(IBAction)accionLogin:(id)sender{
+   
+    [QBRequest logInWithUserLogin:user.text password:passw.text successBlock:[self successBlock] errorBlock:[self errorBlock]];
+    
+}

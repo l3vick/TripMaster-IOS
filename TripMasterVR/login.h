@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface login : UIViewController
+@interface login : UIViewController{
+    IBOutlet UITextField *user;
+    IBOutlet UITextField *passw;
+    IBOutlet UIButton *facebook;
+    IBOutlet UIButton *forgot;
+    IBOutlet UIButton *signin;
+    IBOutlet UIButton *signup;
+}
+
 
 @end
