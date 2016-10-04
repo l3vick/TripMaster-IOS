@@ -26,32 +26,21 @@
 }
 
 -(IBAction)accionRegistro:(id)sender{
-    /*AppDelegate *appTemp;
-     Usuario * usuarioTemp;
-     appTemp =[self getAppDelegate];
-     usuarioTemp =[appTemp getUsuario];
-     [usuarioTemp setUsuario:user.text];
-     [usuarioTemp setPassword:passw.text];
-     [usuarioTemp setEmail:email.text];
-     if (passw.text == passwre.text && passw.text.length>=8) {
-     [self performSegueWithIdentifier:@"registro" sender:self];
-     }else{
-     
-     }*/
+
     QBUUser *qbuser = [QBUUser user];
+    
     qbuser.password = passw.text;
     qbuser.login = user.text;
     qbuser.email = email.text;
     
-    
-    // Registration/sign up of User
+ 
     [QBRequest signUp:qbuser successBlock:^(QBResponse *response, QBUUser *user) {
         [self performSegueWithIdentifier:@"registro" sender:self];
         NSLog(@"Se ha registrado correctamente");
     } errorBlock:^(QBResponse *response) {
         NSLog(@"No se ha registrado");// Handle error here
     }];
-}
+} 
 /*
  #pragma mark - Navigation
  

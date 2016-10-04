@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 
 @interface registro : UIViewController{
     
@@ -14,6 +15,7 @@
     IBOutlet UITextField *passw;
     IBOutlet UITextField *passwre;
     IBOutlet UITextField *email;
+    
     IBOutlet UIButton *aceptar;
     IBOutlet UIButton *cancelar;
 }

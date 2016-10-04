@@ -39,6 +39,11 @@
 		2C7A6BE61DA39A1B00D84F6E /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */; };
 		2C7A6BE81DA39D9300D84F6E /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */; };
 		2C7A6BEA1DA3BBDF00D84F6E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE91DA3BBDF00D84F6E /* MapKit.framework */; };
+		2CC5B45A1DA3FFC20089D6DB /* SWRevealViewController in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5B4591DA3FFC20089D6DB /* SWRevealViewController */; };
+		2CC5B45D1DA401750089D6DB /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5B45C1DA401750089D6DB /* MenuViewController.m */; };
+		2CFC364A1DA3E64F0007113D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFC36491DA3E64F0007113D /* Default-568h@2x.png */; };
+		2CFC364E1DA3EE560007113D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CFC364D1DA3EE560007113D /* Info.plist */; };
+		2CFC36511DA3F4380007113D /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFC36501DA3F4380007113D /* MapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,7 +80,6 @@
 		25DD40461D9A588300212265 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		25DD404C1D9A588300212265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		25DD404E1D9A588300212265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		25DD40531D9A588300212265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25DD40581D9A588400212265 /* TripMasterVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TripMasterVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25DD405C1D9A588400212265 /* TripMasterVRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TripMasterVRTests.m; sourceTree = "<group>"; };
 		25DD405E1D9A588400212265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +107,13 @@
 		2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = Frameworks/Quickblox.framework; sourceTree = "<group>"; };
 		2C7A6BE91DA3BBDF00D84F6E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2CC5B4591DA3FFC20089D6DB /* SWRevealViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SWRevealViewController; sourceTree = "<group>"; };
+		2CC5B45B1DA401750089D6DB /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		2CC5B45C1DA401750089D6DB /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		2CFC36491DA3E64F0007113D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2CFC364D1DA3EE560007113D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFC364F1DA3F4380007113D /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		2CFC36501DA3F4380007113D /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +190,7 @@
 		25DD40361D9A588300212265 = {
 			isa = PBXGroup;
 			children = (
+				2CC5B4591DA3FFC20089D6DB /* SWRevealViewController */,
 				2C7A6BE91DA3BBDF00D84F6E /* MapKit.framework */,
 				2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */,
 				2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */,
@@ -198,6 +210,7 @@
 				2C4BC72D1D9D20D300E9A9A9 /* MobileCoreServices.framework */,
 				2C4BC72B1D9D20BF00E9A9A9 /* SystemConfiguration.framework */,
 				2C4BC7291D9D209600E9A9A9 /* CFNetwork.framework */,
+				2CFC36491DA3E64F0007113D /* Default-568h@2x.png */,
 				25DD40411D9A588300212265 /* TripMasterVR */,
 				25DD405B1D9A588400212265 /* TripMasterVRTests */,
 				25DD40661D9A588400212265 /* TripMasterVRUITests */,
@@ -223,8 +236,8 @@
 				25DD40451D9A588300212265 /* AppDelegate.h */,
 				25DD40461D9A588300212265 /* AppDelegate.m */,
 				25DD404E1D9A588300212265 /* Assets.xcassets */,
-				25DD40531D9A588300212265 /* Info.plist */,
 				25DD40421D9A588300212265 /* Supporting Files */,
+				2CFC364D1DA3EE560007113D /* Info.plist */,
 			);
 			path = TripMasterVR;
 			sourceTree = "<group>";
@@ -275,6 +288,10 @@
 			isa = PBXGroup;
 			children = (
 				25DD404B1D9A588300212265 /* Home.storyboard */,
+				2CFC364F1DA3F4380007113D /* MapViewController.h */,
+				2CFC36501DA3F4380007113D /* MapViewController.m */,
+				2CC5B45B1DA401750089D6DB /* MenuViewController.h */,
+				2CC5B45C1DA401750089D6DB /* MenuViewController.m */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -382,14 +399,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFC364E1DA3EE560007113D /* Info.plist in Resources */,
 				25DD404F1D9A588300212265 /* Assets.xcassets in Resources */,
-<<<<<<< Updated upstream
 				25DD404D1D9A588300212265 /* Home.storyboard in Resources */,
-=======
 				2540AA331DA3B5F200AD525A /* world.jpg in Resources */,
-				25DD404D1D9A588300212265 /* Main.storyboard in Resources */,
->>>>>>> Stashed changes
+				25DD404D1D9A588300212265 /* Home.storyboard in Resources */,
+				2CC5B45A1DA3FFC20089D6DB /* SWRevealViewController in Resources */,
 				2C4BC7281D9D1EB100E9A9A9 /* Profile.storyboard in Resources */,
+				2CFC364A1DA3E64F0007113D /* Default-568h@2x.png in Resources */,
 				259206201D9D1A5200B68D56 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,9 +435,11 @@
 				25DD40471D9A588300212265 /* AppDelegate.m in Sources */,
 				259206321D9D24A900B68D56 /* login.m in Sources */,
 				2592062F1D9D249800B68D56 /* loginOptions.m in Sources */,
+				2CC5B45D1DA401750089D6DB /* MenuViewController.m in Sources */,
 				259206381D9D24C900B68D56 /* passwordReset.m in Sources */,
 				259206351D9D24B300B68D56 /* registro.m in Sources */,
 				25DD40441D9A588300212265 /* main.m in Sources */,
+				2CFC36511DA3F4380007113D /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
