@@ -92,6 +92,7 @@
                         <viewControllerLayoutGuide type="bottom" id="gWk-iG-PdO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="gmy-Vy-QNX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q7o-91-rxx">
@@ -180,6 +181,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9iJ-ee-6xS"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bpp-u7-uYG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Controller" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04P-4K-bVr">
@@ -208,6 +210,15 @@
                                     <rect key="frame" x="20" y="178" width="360" height="30"/>
                                 </variation>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bja-C7-pta">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Sign in">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="223" width="360" height="30"/>
+                                </variation>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukp-dh-a7j">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Forgot Password"/>
@@ -218,15 +229,6 @@
                                     <segue destination="uvZ-jh-yBa" kind="show" id="Uno-aJ-LFm"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bja-C7-pta">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Sign in">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="223" width="360" height="30"/>
-                                </variation>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -234,8 +236,8 @@
                                 <exclude reference="04P-4K-bVr"/>
                                 <exclude reference="bpi-0L-a25"/>
                                 <exclude reference="yuP-JP-0Xj"/>
-                                <exclude reference="ukp-dh-a7j"/>
                                 <exclude reference="bja-C7-pta"/>
+                                <exclude reference="ukp-dh-a7j"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -243,8 +245,8 @@
                                 <include reference="04P-4K-bVr"/>
                                 <include reference="bpi-0L-a25"/>
                                 <include reference="yuP-JP-0Xj"/>
-                                <include reference="ukp-dh-a7j"/>
                                 <include reference="bja-C7-pta"/>
+                                <include reference="ukp-dh-a7j"/>
                             </mask>
                         </variation>
                     </view>
@@ -262,6 +264,7 @@
                         <viewControllerLayoutGuide type="bottom" id="zZu-v5-v55"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="duB-bk-1Uq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reset Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qE5-ja-OiW">

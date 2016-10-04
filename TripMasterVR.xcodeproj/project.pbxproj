@@ -10,7 +10,7 @@
 		259206201D9D1A5200B68D56 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2592061F1D9D1A5200B68D56 /* Login.storyboard */; };
 		2592062F1D9D249800B68D56 /* loginOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2592062E1D9D249800B68D56 /* loginOptions.m */; };
 		259206321D9D24A900B68D56 /* login.m in Sources */ = {isa = PBXBuildFile; fileRef = 259206311D9D24A900B68D56 /* login.m */; };
-		259206351D9D24B300B68D56 /* register.m in Sources */ = {isa = PBXBuildFile; fileRef = 259206341D9D24B300B68D56 /* register.m */; };
+		259206351D9D24B300B68D56 /* registro.m in Sources */ = {isa = PBXBuildFile; fileRef = 259206341D9D24B300B68D56 /* registro.m */; };
 		259206381D9D24C900B68D56 /* passwordReset.m in Sources */ = {isa = PBXBuildFile; fileRef = 259206371D9D24C900B68D56 /* passwordReset.m */; };
 		25DD40441D9A588300212265 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40431D9A588300212265 /* main.m */; };
 		25DD40471D9A588300212265 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25DD40461D9A588300212265 /* AppDelegate.m */; };
@@ -62,8 +62,8 @@
 		2592062E1D9D249800B68D56 /* loginOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = loginOptions.m; sourceTree = "<group>"; };
 		259206301D9D24A900B68D56 /* login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = login.h; sourceTree = "<group>"; };
 		259206311D9D24A900B68D56 /* login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = login.m; sourceTree = "<group>"; };
-		259206331D9D24B300B68D56 /* register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = register.h; sourceTree = "<group>"; };
-		259206341D9D24B300B68D56 /* register.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = register.m; sourceTree = "<group>"; };
+		259206331D9D24B300B68D56 /* registro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = registro.h; sourceTree = "<group>"; };
+		259206341D9D24B300B68D56 /* registro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = registro.m; sourceTree = "<group>"; };
 		259206361D9D24C900B68D56 /* passwordReset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = passwordReset.h; sourceTree = "<group>"; };
 		259206371D9D24C900B68D56 /* passwordReset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = passwordReset.m; sourceTree = "<group>"; };
 		25DD403F1D9A588300212265 /* TripMasterVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripMasterVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,8 +158,8 @@
 				2592061F1D9D1A5200B68D56 /* Login.storyboard */,
 				259206361D9D24C900B68D56 /* passwordReset.h */,
 				259206371D9D24C900B68D56 /* passwordReset.m */,
-				259206331D9D24B300B68D56 /* register.h */,
-				259206341D9D24B300B68D56 /* register.m */,
+				259206331D9D24B300B68D56 /* registro.h */,
+				259206341D9D24B300B68D56 /* registro.m */,
 				259206301D9D24A900B68D56 /* login.h */,
 				259206311D9D24A900B68D56 /* login.m */,
 				2592062D1D9D249800B68D56 /* loginOptions.h */,
@@ -391,7 +391,7 @@
 				259206321D9D24A900B68D56 /* login.m in Sources */,
 				2592062F1D9D249800B68D56 /* loginOptions.m in Sources */,
 				259206381D9D24C900B68D56 /* passwordReset.m in Sources */,
-				259206351D9D24B300B68D56 /* register.m in Sources */,
+				259206351D9D24B300B68D56 /* registro.m in Sources */,
 				25DD40441D9A588300212265 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
