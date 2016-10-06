@@ -37,10 +37,12 @@
 		2C4BC7441D9D218300E9A9A9 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4BC7431D9D218300E9A9A9 /* libresolv.tbd */; };
 		2C4BC7461D9D219200E9A9A9 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4BC7451D9D219200E9A9A9 /* libxml2.tbd */; };
 		2C4BC7481D9D219A00E9A9A9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C4BC7471D9D219A00E9A9A9 /* libz.tbd */; };
+		2C6B0B751DA657A6002256C2 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B0B741DA657A6002256C2 /* menu.png */; };
+		2C6B0B7D1DA65CAC002256C2 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6B0B7C1DA65CAC002256C2 /* SWRevealViewController.m */; };
+		2C6B0B7F1DA65EAE002256C2 /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C6B0B7E1DA65EAE002256C2 /* menu@2x.png */; };
 		2C7A6BE61DA39A1B00D84F6E /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */; };
 		2C7A6BE81DA39D9300D84F6E /* Quickblox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */; };
 		2C7A6BEA1DA3BBDF00D84F6E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A6BE91DA3BBDF00D84F6E /* MapKit.framework */; };
-		2CC5B45A1DA3FFC20089D6DB /* SWRevealViewController in Resources */ = {isa = PBXBuildFile; fileRef = 2CC5B4591DA3FFC20089D6DB /* SWRevealViewController */; };
 		2CC5B45D1DA401750089D6DB /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC5B45C1DA401750089D6DB /* MenuViewController.m */; };
 		2CFC364A1DA3E64F0007113D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CFC36491DA3E64F0007113D /* Default-568h@2x.png */; };
 		2CFC364E1DA3EE560007113D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CFC364D1DA3EE560007113D /* Info.plist */; };
@@ -106,11 +108,14 @@
 		2C4BC7431D9D218300E9A9A9 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		2C4BC7451D9D219200E9A9A9 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
 		2C4BC7471D9D219A00E9A9A9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		2C6B0B741DA657A6002256C2 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = menu.png; path = ../../Downloads/SidebarDemoTemplate/SidebarDemo/menu.png; sourceTree = "<group>"; };
+		2C6B0B7B1DA65CAC002256C2 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = "../../Downloads/SWRevealViewController-2.4.0 2/SWRevealViewController/SWRevealViewController.h"; sourceTree = "<group>"; };
+		2C6B0B7C1DA65CAC002256C2 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = "../../Downloads/SWRevealViewController-2.4.0 2/SWRevealViewController/SWRevealViewController.m"; sourceTree = "<group>"; };
+		2C6B0B7E1DA65EAE002256C2 /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "menu@2x.png"; path = "../../Downloads/SidebarDemoTemplate/SidebarDemo/menu@2x.png"; sourceTree = "<group>"; };
 		2C7A6BE41DA3975700D84F6E /* TripMaster.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TripMaster.pch; sourceTree = "<group>"; };
 		2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quickblox.framework; path = Frameworks/Quickblox.framework; sourceTree = "<group>"; };
 		2C7A6BE91DA3BBDF00D84F6E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		2CC5B4591DA3FFC20089D6DB /* SWRevealViewController */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SWRevealViewController; sourceTree = "<group>"; };
 		2CC5B45B1DA401750089D6DB /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		2CC5B45C1DA401750089D6DB /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		2CFC36491DA3E64F0007113D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -193,7 +198,6 @@
 		25DD40361D9A588300212265 = {
 			isa = PBXGroup;
 			children = (
-				2CC5B4591DA3FFC20089D6DB /* SWRevealViewController */,
 				2C7A6BE91DA3BBDF00D84F6E /* MapKit.framework */,
 				2C7A6BE71DA39D9300D84F6E /* Quickblox.framework */,
 				2C7A6BE51DA39A1A00D84F6E /* libz.1.2.5.tbd */,
@@ -234,6 +238,8 @@
 		25DD40411D9A588300212265 /* TripMasterVR */ = {
 			isa = PBXGroup;
 			children = (
+				2C6B0B7B1DA65CAC002256C2 /* SWRevealViewController.h */,
+				2C6B0B7C1DA65CAC002256C2 /* SWRevealViewController.m */,
 				2C7A6BE31DA3948900D84F6E /* Icons */,
 				2592061B1D9D18C200B68D56 /* Features */,
 				25DD40451D9A588300212265 /* AppDelegate.h */,
@@ -248,6 +254,7 @@
 		25DD40421D9A588300212265 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C6B0B731DA6578B002256C2 /* Images */,
 				25DD40431D9A588300212265 /* main.m */,
 				2C7A6BE41DA3975700D84F6E /* TripMaster.pch */,
 			);
@@ -280,6 +287,15 @@
 				2554AC461DA65FF7008F8A8C /* ProfileViewController.m */,
 			);
 			name = Profile;
+			sourceTree = "<group>";
+		};
+		2C6B0B731DA6578B002256C2 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2C6B0B7E1DA65EAE002256C2 /* menu@2x.png */,
+				2C6B0B741DA657A6002256C2 /* menu.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 		2C7A6BE31DA3948900D84F6E /* Icons */ = {
@@ -409,8 +425,9 @@
 				25DD404D1D9A588300212265 /* Home.storyboard in Resources */,
 				2540AA331DA3B5F200AD525A /* world.jpg in Resources */,
 				25DD404D1D9A588300212265 /* Home.storyboard in Resources */,
-				2CC5B45A1DA3FFC20089D6DB /* SWRevealViewController in Resources */,
+				2C6B0B751DA657A6002256C2 /* menu.png in Resources */,
 				2C4BC7281D9D1EB100E9A9A9 /* Profile.storyboard in Resources */,
+				2C6B0B7F1DA65EAE002256C2 /* menu@2x.png in Resources */,
 				2CFC364A1DA3E64F0007113D /* Default-568h@2x.png in Resources */,
 				259206201D9D1A5200B68D56 /* Login.storyboard in Resources */,
 			);
@@ -443,6 +460,7 @@
 				2592062F1D9D249800B68D56 /* loginOptions.m in Sources */,
 				2CC5B45D1DA401750089D6DB /* MenuViewController.m in Sources */,
 				259206381D9D24C900B68D56 /* passwordReset.m in Sources */,
+				2C6B0B7D1DA65CAC002256C2 /* SWRevealViewController.m in Sources */,
 				259206351D9D24B300B68D56 /* registro.m in Sources */,
 				25DD40441D9A588300212265 /* main.m in Sources */,
 				2CFC36511DA3F4380007113D /* MapViewController.m in Sources */,

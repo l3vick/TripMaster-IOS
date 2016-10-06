@@ -98,17 +98,19 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="5pa-7v-iTt">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="taE-Yp-sdE"/>
+                        <barButtonItem key="rightBarButtonItem" image="menu.png" id="taE-Yp-sdE">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLD-sa-8dM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="402" y="-758.25"/>
+            <point key="canvasLocation" x="1593" y="-130.5"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="JpO-L7-yK2">
             <objects>
-                <tableViewController id="BQd-d3-NeX" customClass="MenuViewController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MenuViewController" id="BQd-d3-NeX" customClass="MenuViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="PC1-4e-zuG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,9 +133,9 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbW-j5-cwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1473" y="-72.75"/>
+            <point key="canvasLocation" x="1338" y="-909.75"/>
         </scene>
-        <!--Reveal View Controller-->
+        <!--Map-->
         <scene sceneID="4zq-d6-Zgj">
             <objects>
                 <viewController id="dbq-oK-4yP" customClass="SWRevealViewController" sceneMemberID="viewController">
@@ -146,14 +148,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="Wmy-md-yng"/>
                     <connections>
-                        <segue destination="BQd-d3-NeX" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="dcX-fP-RKD"/>
-                        <segue destination="4xp-KR-bii" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="cGI-Kx-zJH"/>
+                        <segue destination="BQd-d3-NeX" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="TaP-se-1CH"/>
+                        <segue destination="4xp-KR-bii" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="blU-o3-62W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Itm-RE-kee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-72.75"/>
+            <point key="canvasLocation" x="-334.5" y="-813"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ujI-6F-501">
@@ -174,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIS-sc-P0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-192" y="173.25"/>
+            <point key="canvasLocation" x="-480" y="-17.25"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NKz-Df-ntk">
@@ -186,13 +189,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="4xp-KR-bii" kind="relationship" relationship="viewControllers" id="1vg-wK-GEy"/>
                         <segue destination="Ki9-P3-OqC" kind="relationship" relationship="viewControllers" id="Gcd-Ax-WRh"/>
+                        <segue destination="dbq-oK-4yP" kind="relationship" relationship="viewControllers" id="DDb-2N-dt3"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFG-HP-vyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1014" y="-758.25"/>
+            <point key="canvasLocation" x="-1254" y="-751.5"/>
         </scene>
         <!--Map-->
         <scene sceneID="K8v-rP-k4L">
@@ -211,7 +214,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i54-YB-iHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-333" y="-758.25"/>
+            <point key="canvasLocation" x="765" y="-130.5"/>
         </scene>
         <!--Profile-->
         <scene sceneID="WnL-HZ-vki">
@@ -230,14 +233,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYR-8u-ZW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1002" y="173.25"/>
+            <point key="canvasLocation" x="-1254" y="-17.25"/>
         </scene>
     </scenes>
     <resources>
         <image name="                  " width="16" height="16"/>
+        <image name="menu.png" width="28" height="20"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="cGI-Kx-zJH"/>
-    </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>
