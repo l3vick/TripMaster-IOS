@@ -67,6 +67,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25353E961DACE47200F93664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/tablePoiCreated.h; sourceTree = "<group>"; };
+		25353E981DACE47200F93664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/tablePoiCreated.m; sourceTree = "<group>"; };
 		2540AA321DA3B5F200AD525A /* world.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = world.jpg; sourceTree = "<group>"; };
 		2554AC451DA65FF7008F8A8C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		2554AC461DA65FF7008F8A8C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
@@ -285,6 +287,8 @@
 				2C4BC7271D9D1EB100E9A9A9 /* Profile.storyboard */,
 				2554AC451DA65FF7008F8A8C /* ProfileViewController.h */,
 				2554AC461DA65FF7008F8A8C /* ProfileViewController.m */,
+				25353E951DACE47200F93664 /* tablePoiCreated.h */,
+				25353E971DACE47200F93664 /* tablePoiCreated.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -499,6 +503,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		25353E951DACE47200F93664 /* tablePoiCreated.h */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25353E961DACE47200F93664 /* Base */,
+			);
+			name = tablePoiCreated.h;
+			sourceTree = "<group>";
+		};
+		25353E971DACE47200F93664 /* tablePoiCreated.m */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25353E981DACE47200F93664 /* Base */,
+			);
+			name = tablePoiCreated.m;
+			sourceTree = "<group>";
+		};
 		25DD404B1D9A588300212265 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

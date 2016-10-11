@@ -10,7 +10,8 @@
 #import <Quickblox/Quickblox.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+@property (strong, nonatomic) QBUUser *usuario;
+@property (strong, nonatomic) QBCOCustomObject *filaViajeros;
 @property (strong, nonatomic) UIWindow *window;
 
 
