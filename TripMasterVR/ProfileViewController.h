@@ -8,6 +8,23 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController
+@interface ProfileViewController : UIViewController{
+    
+    
+    IBOutlet UILabel *namelbl;
+    IBOutlet UILabel *pointslbl;
+    IBOutlet UILabel *poicreatedlbl;
+    IBOutlet UILabel *latestvisitedlbl;
+    IBOutlet UILabel *ranks;
+    
+    IBOutlet UITextField *nametxt;
+    IBOutlet UITextField *pointstxt;
+    
+    
+    IBOutlet UIButton *changePassword;
+    IBOutlet UIButton *userReboot;
+
+    
+}
 
 @end
