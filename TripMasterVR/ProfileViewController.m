@@ -10,7 +10,7 @@
 #import "tablePoiCreated.h"
 
 
-
+/*
 @interface ProfileViewController ()
 
 @end
@@ -48,7 +48,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+*/
 /*
  #pragma mark - Navigation
  
@@ -57,6 +57,6 @@
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
  }
- */
+ 
 
-@end
+@end*/
