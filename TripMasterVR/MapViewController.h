@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 #import "SWRevealViewController.h"
+#import "ILGeoNamesLookup.h"
 
-@interface MapViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+static NSString *kGeoNamesAccountName = @"rozularen";
+
+@interface MapViewController : UIViewController<ILGeoNamesLookupDelegate, MKMapViewDelegate>{
+    
+    
+    IBOutlet MKMapView *mapView;
+    
+}
+@property (nonatomic, retain) ILGeoNamesLookup *geocoder;
+@property  (nonatomic, strong) IBOutlet UIBarButtonItem *sidebarButton;
 @end

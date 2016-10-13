@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import <Quickblox/Quickblox.h>
 #import "QBAdmin.h"
 #import "NotificacionTest.h"

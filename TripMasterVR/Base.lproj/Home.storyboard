@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="a4Z-9D-wEE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dbq-oK-4yP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -18,92 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rDk-me-kna"/>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMM-Ep-9nf">
-                                <frame key="frameInset" width="240" height="128"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMH-9K-SD4">
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="VMH-9K-SD4" firstAttribute="top" secondItem="NMM-Ep-9nf" secondAttribute="top" constant="20" id="IKs-33-0Yn"/>
-                                    <constraint firstItem="VMH-9K-SD4" firstAttribute="leading" secondItem="NMM-Ep-9nf" secondAttribute="leading" constant="172" id="f4x-lT-eVa"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="VMH-9K-SD4"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <exclude reference="IKs-33-0Yn"/>
-                                        <exclude reference="f4x-lT-eVa"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="subviews">
-                                        <include reference="VMH-9K-SD4"/>
-                                    </mask>
-                                    <mask key="constraints">
-                                        <include reference="IKs-33-0Yn"/>
-                                        <include reference="f4x-lT-eVa"/>
-                                    </mask>
-                                </variation>
-                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rDk-me-kna">
+                                <frame key="frameInset" minY="64" width="375" height="603"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NMM-Ep-9nf" firstAttribute="bottom" secondItem="IVo-ge-kqa" secondAttribute="top" id="44m-ZD-XrW"/>
-                            <constraint firstItem="NMM-Ep-9nf" firstAttribute="leading" secondItem="4EU-s1-GQp" secondAttribute="leading" id="559-bR-YmS"/>
-                            <constraint firstItem="NMM-Ep-9nf" firstAttribute="top" secondItem="hYY-dY-T9C" secondAttribute="bottom" constant="621" id="GnY-bK-cHv"/>
-                            <constraint firstItem="rDk-me-kna" firstAttribute="top" secondItem="hYY-dY-T9C" secondAttribute="bottom" id="I7Q-qz-ga6"/>
-                            <constraint firstItem="rDk-me-kna" firstAttribute="bottom" secondItem="IVo-ge-kqa" secondAttribute="top" id="QLe-No-q7N"/>
-                            <constraint firstAttribute="trailing" secondItem="NMM-Ep-9nf" secondAttribute="trailing" id="fsr-Xj-y4h"/>
-                            <constraint firstItem="rDk-me-kna" firstAttribute="trailing" secondItem="NMM-Ep-9nf" secondAttribute="trailing" id="qZZ-h7-Otx"/>
-                            <constraint firstItem="NMM-Ep-9nf" firstAttribute="leading" secondItem="rDk-me-kna" secondAttribute="leading" id="rGo-Wz-ZEe"/>
+                            <constraint firstItem="rDk-me-kna" firstAttribute="top" secondItem="hYY-dY-T9C" secondAttribute="bottom" id="9pa-jq-BiB"/>
+                            <constraint firstItem="rDk-me-kna" firstAttribute="leading" secondItem="4EU-s1-GQp" secondAttribute="leading" id="NeP-fa-NKr"/>
+                            <constraint firstAttribute="trailing" secondItem="rDk-me-kna" secondAttribute="trailing" id="RKs-ls-GH6"/>
+                            <constraint firstItem="IVo-ge-kqa" firstAttribute="top" secondItem="rDk-me-kna" secondAttribute="bottom" constant="97" id="Upm-o1-cHh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="rDk-me-kna"/>
-                                <exclude reference="NMM-Ep-9nf"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="44m-ZD-XrW"/>
-                                <exclude reference="559-bR-YmS"/>
-                                <exclude reference="GnY-bK-cHv"/>
-                                <exclude reference="fsr-Xj-y4h"/>
-                                <exclude reference="rGo-Wz-ZEe"/>
-                                <exclude reference="I7Q-qz-ga6"/>
-                                <exclude reference="QLe-No-q7N"/>
-                                <exclude reference="qZZ-h7-Otx"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="rDk-me-kna"/>
-                                <include reference="NMM-Ep-9nf"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="44m-ZD-XrW"/>
-                                <include reference="559-bR-YmS"/>
-                                <include reference="GnY-bK-cHv"/>
-                                <include reference="fsr-Xj-y4h"/>
-                                <include reference="rGo-Wz-ZEe"/>
-                                <include reference="I7Q-qz-ga6"/>
-                                <include reference="QLe-No-q7N"/>
-                                <include reference="qZZ-h7-Otx"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Map" id="5pa-7v-iTt">
-                        <barButtonItem key="rightBarButtonItem" image="menu.png" id="taE-Yp-sdE">
+                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="taE-Yp-sdE">
                             <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="rDk-me-kna" id="sHe-YM-XIu"/>
+                        <outlet property="sidebarButton" destination="taE-Yp-sdE" id="3cw-EX-NMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bLD-sa-8dM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="-130.5"/>
+            <point key="canvasLocation" x="1592.8" y="-130.88455772113943"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="JpO-L7-yK2">
@@ -118,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fvN-SP-ggc" id="BTa-mk-PVB">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                    <frame key="frameInset" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -141,7 +90,7 @@
                         <viewControllerLayoutGuide type="top" id="SSd-q7-iG1"/>
                         <viewControllerLayoutGuide type="bottom" id="Q0P-yC-mYd"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Uow-QF-ynr">
+                    <view key="view" contentMode="scaleToFill" id="Uow-QF-ynr" customClass="SWRevealView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -154,12 +103,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Itm-RE-kee" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-334.5" y="-813"/>
+            <point key="canvasLocation" x="-335" y="-752"/>
         </scene>
         <!--Profile-->
         <scene sceneID="ujI-6F-501">
             <objects>
-                <viewController id="Ke7-tw-KYg" sceneMemberID="viewController">
+                <viewController id="Ke7-tw-KYg" customClass="HomeProfileViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fqo-Yb-87Z"/>
                         <viewControllerLayoutGuide type="bottom" id="w3l-kH-yjY"/>
@@ -176,24 +125,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIS-sc-P0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-480" y="-17.25"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="NKz-Df-ntk">
-            <objects>
-                <tabBarController storyboardIdentifier="MapViewController" id="a4Z-9D-wEE" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="XcC-UF-Tm1">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="Ki9-P3-OqC" kind="relationship" relationship="viewControllers" id="Gcd-Ax-WRh"/>
-                        <segue destination="dbq-oK-4yP" kind="relationship" relationship="viewControllers" id="DDb-2N-dt3"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UFG-HP-vyf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1254" y="-751.5"/>
         </scene>
         <!--Map-->
         <scene sceneID="K8v-rP-k4L">
