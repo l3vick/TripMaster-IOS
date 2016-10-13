@@ -26,15 +26,8 @@
     nsmdLocationVSQBObj=[NSMutableDictionary new];
     // Do any additional setup after loading the view.
     NSMutableDictionary *getRequest = [NSMutableDictionary dictionary];
-    /*
-    NSString *ran=[a.filaViajeros.fields objectForKey:@"rango"];
-    float punt=[[a.filaViajeros.fields objectForKey:@"puntuacion"] floatValue];
-    
-    lblranking.text = ran;
-    lblpoints.text = [NSString stringWithFormat:@"%f",punt];
-    
     getRequest = [NSMutableDictionary dictionary];
-    [QBRequest objectsWithClassName:@"PinSites" extendedRequest:getRequest successBlock:^(QBResponse *response, NSArray *objects, QBResponsePage *page) {
+    [QBRequest objectsWithClassName:@"poicreados" extendedRequest:getRequest successBlock:^(QBResponse *response, NSArray *objects, QBResponsePage *page) {
         // response processing
         for(int i =0; i < objects.count ; i++) {
             QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) objects[i];// creamos un QBCO de tipo objeto y lo igualamos a objects
@@ -42,7 +35,7 @@
             double Latitud=[[objetoEnLaFila.fields objectForKey:@"Lat"] doubleValue];
             double Longitud=[[objetoEnLaFila.fields objectForKey:@"Lon"] doubleValue];
             
-            CLLocation *startLocation = [[CLLocation alloc] initWithLatitude:Latitud longitude:Longitud];
+            //CLLocation *startLocation = [[CLLocation alloc] initWithLatitude:Latitud longitude:Longitud];
             //startLocation.debugDescription=objetoEnLaFila.ID;
             
             
@@ -55,8 +48,7 @@
         // error handling
         NSLog(@"Response error: %@", [response.error description]);
     }];
-    
-     */
+
 
 }
 
@@ -66,8 +58,8 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if(tableView == tabla1){
-        return nsObjetosLeidos.count;
-    }
+        return 0;//nsObjetosLeidos.count
+            }
     else if(tableView == tabla2){
         return 0;
     }else if(tableView == tabla3){
@@ -78,7 +70,8 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    tablePoiCreated *cell=[tableView dequeueReusableCellWithIdentifier:@"celdaitem1"];
+    tablePoiCreated *cell = [tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
+    
     
     
     
