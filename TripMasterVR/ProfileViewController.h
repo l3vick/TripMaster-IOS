@@ -17,12 +17,13 @@
     IBOutlet UILabel *latestvisitedlbl;
     IBOutlet UILabel *ranks;
     
-    IBOutlet UITextField *nametxt;
-    IBOutlet UITextField *pointstxt;
+    IBOutlet UILabel *nametxt;
+    IBOutlet UILabel *pointstxt;
     
     
     IBOutlet UIButton *changePassword;
     IBOutlet UIButton *userReboot;
+    NSArray *nsObjetosLeidos;
 
     
 }

@@ -10,7 +10,7 @@
 #import "tablePoiCreated.h"
 
 
-/*
+
 @interface ProfileViewController ()
 
 @end
@@ -30,14 +30,15 @@
     
     QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) nsObjetosLeidos[indx];
     
-    NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"Nombre"];
+    NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"namepoi"];
     
-    //int cid=[[objetoEnLaFila.fields objectForKey:@"Cid"] intValue];
-   // [cell descargaImagen:cid];
+    int cid=[[objetoEnLaFila.fields objectForKey:@"cid"] intValue];
+    [cell descargaImagen:cid];
     NSString *sCelda = Nombre;
     [cell modificaLabel: sCelda];
     
     return cell;
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,7 +49,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-*/
+
+
 /*
  #pragma mark - Navigation
  
@@ -57,6 +59,6 @@
  // Get the new view controller using [segue destinationViewController].
  // Pass the selected object to the new view controller.
  }
- 
+ */
 
-@end*/
+@end

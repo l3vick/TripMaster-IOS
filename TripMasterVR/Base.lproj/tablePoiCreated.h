@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Quickblox/Quickblox.h>
 
 @interface tablePoiCreated : UITableViewCell{
-    
+    IBOutlet UIImageView *imagen;
     IBOutlet UILabel *etiqueta;
     
 }
 - (void)modificaLabel: (NSString*)label;
-
+-(void)descargaImagen:(int)cid;
 @end

@@ -13,6 +13,7 @@
 @property (strong, nonatomic) QBUUser *usuario;
 @property (strong, nonatomic) QBCOCustomObject *filaViajeros;
 @property (strong, nonatomic) UIWindow *window;
+//@property (strong, nonatomic) LocationAdmin *location;
 
 
 @end
