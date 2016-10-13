@@ -23,7 +23,11 @@
     
     IBOutlet UIButton *changePassword;
     IBOutlet UIButton *userReboot;
+    IBOutlet UITableView *tabla1;
+    IBOutlet UITableView *tabla2;
+    IBOutlet UITableView *tabla3;
     NSArray *nsObjetosLeidos;
+    NSMutableDictionary *nsmdLocationVSQBObj;
 
     
 }
