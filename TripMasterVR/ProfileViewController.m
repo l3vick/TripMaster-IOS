@@ -8,6 +8,7 @@
 
 #import "ProfileViewController.h"
 #import "tablePoiCreated.h"
+#import "tablePoiVisited.h"
 #import "AppDelegate.h"
 
 
@@ -57,28 +58,25 @@
     // Dispose of any resources that can be recreated.
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+        NSInteger num = 0;
     if(tableView == tabla1){
-        return 2;
+        num = nsObjetosLeidos.count;
             }
     else if(tableView == tabla2){
-        return 2;
+        num = 0;
     }else if(tableView == tabla3){
-        return 2;
+        num = 0;
     }
     
-    return 0;
+    return num;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = nil;
     if(tableView == tabla1){
+        
         tablePoiCreated *cell = [tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
-        
-        
-        
-        
         int indx = (int) indexPath.row;
-        
         QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) nsObjetosLeidos[indx];
         
         NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"namepoi"];
@@ -88,12 +86,33 @@
         NSString *sCelda = Nombre;
         [cell modificaLabel: sCelda];
     } else if(tableView == tabla2){
-        
+       /* tablePoiVisited *cell = [tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
+        int indxV = (int) indexPath.row;*/
     }else if(tableView == tabla3){
         
     }
 
-    
+    /*static NSString *CellIdentifier = @"poicreados";
+     // Reuse and create cell
+     tablePoiCreated *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+     if (cell == nil) {
+     cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+     }
+     // Update cell data contents
+     
+     int indx = (int) indexPath.row;
+     
+     QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) nsObjetosLeidos[indx];
+     
+     NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"namepoi"];
+     
+     int cid=[[objetoEnLaFila.fields objectForKey:@"cid"] intValue];
+     [cell descargaImagen:cid];
+     NSString *sCelda = Nombre;
+     [cell modificaLabel: sCelda];
+     
+     */
+
     
     
     return cell;
