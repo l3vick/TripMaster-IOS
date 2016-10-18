@@ -13,6 +13,7 @@
 @end
 
 @implementation AppDelegate
+@synthesize qbAdmin;
 
 //@synthesize location;
 
@@ -22,7 +23,15 @@
     [QBConnection registerServiceKey:@"cc5RrZfkNTdwrRX"];
     [QBConnection registerServiceSecret:@"W-5TgsSZHeNkkR8"];
     [QBSettings setAccountKey:@"BucwT8dUu7ZxWenVXsXy"];
+    qbAdmin = [[QBAdmin alloc] init];
+    qbAdmin.delegate = self;
+   // [qbAdmin login:@"NOMBRE" password:@"PASSWORD"];
+   // NSLog(@"1111111");
     return YES;
+}
+
+-(void)loginSuccess:(BOOL)blsuccess{
+    NSLog(@"listener");
 }
 -(AppDelegate *)getAppDelegate{
     return (AppDelegate *) [[UIApplication sharedApplication] delegate];

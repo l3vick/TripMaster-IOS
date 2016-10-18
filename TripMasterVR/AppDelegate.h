@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <Quickblox/Quickblox.h>
+#import "QBAdmin.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, QBAdminDelegate>
+
+@property (strong, nonatomic) QBAdmin *qbAdmin;
 @property (strong, nonatomic) QBUUser *usuario;
 @property (strong, nonatomic) QBCOCustomObject *filaViajeros;
 @property (strong, nonatomic) UIWindow *window;

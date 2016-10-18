@@ -58,33 +58,43 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     if(tableView == tabla1){
-        return 0;//nsObjetosLeidos.count
+        return 2;
             }
     else if(tableView == tabla2){
-        return 0;
+        return 2;
     }else if(tableView == tabla3){
-        return 0;
+        return 2;
     }
     
     return 0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    tablePoiCreated *cell = [tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
+    UITableViewCell *cell = nil;
+    if(tableView == tabla1){
+        tablePoiCreated *cell = [tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
+        
+        
+        
+        
+        int indx = (int) indexPath.row;
+        
+        QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) nsObjetosLeidos[indx];
+        
+        NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"namepoi"];
+        
+        int cid=[[objetoEnLaFila.fields objectForKey:@"cid"] intValue];
+        [cell descargaImagen:cid];
+        NSString *sCelda = Nombre;
+        [cell modificaLabel: sCelda];
+    } else if(tableView == tabla2){
+        
+    }else if(tableView == tabla3){
+        
+    }
+
     
     
-    
-    
-    int indx = (int) indexPath.row;
-    
-    QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) nsObjetosLeidos[indx];
-    
-    NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"namepoi"];
-    
-    int cid=[[objetoEnLaFila.fields objectForKey:@"cid"] intValue];
-    [cell descargaImagen:cid];
-    NSString *sCelda = Nombre;
-    [cell modificaLabel: sCelda];
     
     return cell;
     

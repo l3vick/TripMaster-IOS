@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "QBAdmin.h"
 
-@interface login : UIViewController{
+@interface login : UIViewController<QBAdminDelegate>{
     
     IBOutlet UITextField *user;
     IBOutlet UITextField *passw;

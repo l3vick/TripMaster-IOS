@@ -6,6 +6,7 @@
 //  Copyright © 2016 Pablo Rojas Cifre. All rights reserved.
 //
 
+#import "tablePoiCreated.h"
 #import <UIKit/UIKit.h>
 
 @interface ProfileViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>{
