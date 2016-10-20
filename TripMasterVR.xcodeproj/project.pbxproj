@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2540AA331DA3B5F200AD525A /* world.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2540AA321DA3B5F200AD525A /* world.jpg */; };
+		25484F8C1DB8C6AE00756570 /* poiCreados.m in Sources */ = {isa = PBXBuildFile; fileRef = 25484F8B1DB8C6AE00756570 /* poiCreados.m */; };
 		2554AC471DA65FF7008F8A8C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2554AC461DA65FF7008F8A8C /* ProfileViewController.m */; };
 		258F76D01DB61AFF008A0DE7 /* QBAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = 258F76CF1DB61AFF008A0DE7 /* QBAdmin.m */; };
 		258F76D61DB63204008A0DE7 /* tablePoiVisited.m in Sources */ = {isa = PBXBuildFile; fileRef = 258F76D51DB63204008A0DE7 /* tablePoiVisited.m */; };
@@ -69,9 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		25353E961DACE47200F93664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Base; path = Base.lproj/tablePoiCreated.h; sourceTree = "<group>"; };
-		25353E981DACE47200F93664 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base; path = Base.lproj/tablePoiCreated.m; sourceTree = "<group>"; };
 		2540AA321DA3B5F200AD525A /* world.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = world.jpg; sourceTree = "<group>"; };
+		25484F8A1DB8C6AE00756570 /* poiCreados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poiCreados.h; sourceTree = "<group>"; };
+		25484F8B1DB8C6AE00756570 /* poiCreados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poiCreados.m; sourceTree = "<group>"; };
 		2554AC451DA65FF7008F8A8C /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		2554AC461DA65FF7008F8A8C /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		258F76CE1DB61AFF008A0DE7 /* QBAdmin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QBAdmin.h; sourceTree = "<group>"; };
@@ -303,10 +304,10 @@
 				2C4BC7271D9D1EB100E9A9A9 /* Profile.storyboard */,
 				2554AC451DA65FF7008F8A8C /* ProfileViewController.h */,
 				2554AC461DA65FF7008F8A8C /* ProfileViewController.m */,
-				25353E951DACE47200F93664 /* tablePoiCreated.h */,
-				25353E971DACE47200F93664 /* tablePoiCreated.m */,
 				258F76D41DB63204008A0DE7 /* tablePoiVisited.h */,
 				258F76D51DB63204008A0DE7 /* tablePoiVisited.m */,
+				25484F8A1DB8C6AE00756570 /* poiCreados.h */,
+				25484F8B1DB8C6AE00756570 /* poiCreados.m */,
 			);
 			name = Profile;
 			sourceTree = "<group>";
@@ -476,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25484F8C1DB8C6AE00756570 /* poiCreados.m in Sources */,
 				258F76D61DB63204008A0DE7 /* tablePoiVisited.m in Sources */,
 				25DD40471D9A588300212265 /* AppDelegate.m in Sources */,
 				2554AC471DA65FF7008F8A8C /* ProfileViewController.m in Sources */,
@@ -523,22 +525,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		25353E951DACE47200F93664 /* tablePoiCreated.h */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25353E961DACE47200F93664 /* Base */,
-			);
-			name = tablePoiCreated.h;
-			sourceTree = "<group>";
-		};
-		25353E971DACE47200F93664 /* tablePoiCreated.m */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25353E981DACE47200F93664 /* Base */,
-			);
-			name = tablePoiCreated.m;
-			sourceTree = "<group>";
-		};
 		25DD404B1D9A588300212265 /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

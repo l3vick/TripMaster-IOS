@@ -10,8 +10,8 @@
 #import <Quickblox/Quickblox.h>
 
 @interface tablePoiVisited: UITableViewCell{
-    /*IBOutlet UIImageView *imagen;
-    IBOutlet UILabel *etiqueta;*/
+    IBOutlet UIImageView *imagen;
+    IBOutlet UILabel *etiqueta;
     
 }
 - (void)modificaLabel: (NSString*)label;

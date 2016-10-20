@@ -7,7 +7,7 @@
 //
 
 #import "ProfileViewController.h"
-#import "tablePoiCreated.h"
+#import "poiCreados.h"
 #import "tablePoiVisited.h"
 #import "AppDelegate.h"
 
@@ -31,11 +31,11 @@
     [QBRequest objectsWithClassName:@"poicreados" extendedRequest:getRequest successBlock:^(QBResponse *response, NSArray *objects, QBResponsePage *page) {
         // response processing
         for(int i =0; i < objects.count ; i++) {
-            QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) objects[i];// creamos un QBCO de tipo objeto y lo igualamos a objects
-            NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"Nombre"];
+            //QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) objects[i];// creamos un QBCO de tipo objeto y lo igualamos a objects
+            /*NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"Nombre"];
             double Latitud=[[objetoEnLaFila.fields objectForKey:@"Lat"] doubleValue];
             double Longitud=[[objetoEnLaFila.fields objectForKey:@"Lon"] doubleValue];
-            
+            */
             //CLLocation *startLocation = [[CLLocation alloc] initWithLatitude:Latitud longitude:Longitud];
             //startLocation.debugDescription=objetoEnLaFila.ID;
             
@@ -50,6 +50,24 @@
         NSLog(@"Response error: %@", [response.error description]);
     }];
 
+    [QBRequest objectsWithClassName:@"poivisited" extendedRequest:getRequest successBlock:^(QBResponse *response, NSArray *objects, QBResponsePage *page) {
+        // response processing
+        for(int i =0; i < objects.count ; i++) {
+           // QBCOCustomObject *objetoEnLaFila2=(QBCOCustomObject*) objects[i];// creamos un QBCO de tipo objeto y lo igualamos a objects
+            
+            //CLLocation *startLocation = [[CLLocation alloc] initWithLatitude:Latitud longitude:Longitud];
+            //startLocation.debugDescription=objetoEnLaFila.ID;
+            
+            
+            nsObjetosLeidos2= objects;
+            [tabla2 reloadData];
+        }
+        
+        
+    } errorBlock:^(QBResponse *response) {
+        // error handling
+        NSLog(@"Response error: %@", [response.error description]);
+    }];
 
 }
 
@@ -61,9 +79,11 @@
         NSInteger num = 0;
     if(tableView == tabla1){
         num = nsObjetosLeidos.count;
+       NSLog(@"%lu",(unsigned long)nsObjetosLeidos.count);
             }
     else if(tableView == tabla2){
-        num = 0;
+        num = nsObjetosLeidos2.count;
+        NSLog(@"%lu",(unsigned long)nsObjetosLeidos.count);
     }else if(tableView == tabla3){
         num = 0;
     }
@@ -72,10 +92,10 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = nil;
+    //UITableViewCell *cell = nil;
     if(tableView == tabla1){
         
-        tablePoiCreated *cell = [tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
+        poiCreados *cell = (poiCreados*)[tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
         int indx = (int) indexPath.row;
         QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) nsObjetosLeidos[indx];
         
@@ -85,9 +105,22 @@
         [cell descargaImagen:cid];
         NSString *sCelda = Nombre;
         [cell modificaLabel: sCelda];
+        //cell=cell2;
+        return cell;
     } else if(tableView == tabla2){
-       /* tablePoiVisited *cell = [tableView dequeueReusableCellWithIdentifier:@"poicreados" forIndexPath:indexPath];
-        int indxV = (int) indexPath.row;*/
+        tablePoiVisited *cell2 = [tableView dequeueReusableCellWithIdentifier:@"poivisited" forIndexPath:indexPath];
+        int indxV = (int) indexPath.row;
+        QBCOCustomObject *objetoEnLaFila=(QBCOCustomObject*) nsObjetosLeidos[indxV];
+        
+        NSString * Nombre=[objetoEnLaFila.fields objectForKey:@"namepoi"];
+        
+        int cid=[[objetoEnLaFila.fields objectForKey:@"cid"] intValue];
+        [cell2 descargaImagen:cid];
+        NSString *sCelda = Nombre;
+        [cell2 modificaLabel: sCelda];
+        //cell=cell2;
+        return cell2;
+
     }else if(tableView == tabla3){
         
     }
@@ -115,7 +148,7 @@
 
     
     
-    return cell;
+    return nil;
     
 }
 

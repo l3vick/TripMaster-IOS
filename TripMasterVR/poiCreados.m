@@ -1,14 +1,14 @@
 //
-//  tablePoiVisited.m
+//  poiCreados.m
 //  TripMasterVR
 //
-//  Created by Pablo Rojas Cifre on 18/10/16.
+//  Created by Pablo Rojas Cifre on 20/10/16.
 //  Copyright © 2016 Pablo Rojas Cifre. All rights reserved.
 //
 
-#import "tablePoiVisited.h"
+#import "poiCreados.h"
 
-@implementation tablePoiVisited
+@implementation poiCreados
 
 - (void)awakeFromNib {
     [super awakeFromNib];
@@ -36,6 +36,5 @@
         NSLog(@"error: %@", response.error);
     }];
 }
-
 
 @end

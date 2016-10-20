@@ -65,7 +65,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="59" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-jR-QL0">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="poicreados" rowHeight="59" id="WJY-v9-xdU" customClass="tablePoiCreated">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="poicreados" rowHeight="59" id="WJY-v9-xdU" customClass="poiCreados">
                                         <rect key="frame" x="0.0" y="28" width="343" height="59"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WJY-v9-xdU" id="jay-rA-UFv">
@@ -94,8 +94,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="etiqueta" destination="Z0T-vd-gEv" id="auY-LI-4kH"/>
-                                            <outlet property="imagen" destination="jWR-mQ-flk" id="eHy-3X-RPm"/>
+                                            <outlet property="etiqueta" destination="Z0T-vd-gEv" id="17u-MZ-OrA"/>
+                                            <outlet property="imagen" destination="jWR-mQ-flk" id="CCt-wu-SyR"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -107,13 +107,30 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="57" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eSV-NX-imd">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="poivisitados" rowHeight="57" id="I6t-9K-Phg">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="poivisited" rowHeight="57" id="I6t-9K-Phg" customClass="tablePoiVisited">
                                         <rect key="frame" x="0.0" y="28" width="343" height="57"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="I6t-9K-Phg" id="Pup-bV-264">
                                             <frame key="frameInset" width="343" height="56"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="world.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="kGM-dZ-hLz">
+                                                    <frame key="frameInset" minX="209" width="77" height="48"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDu-CW-ASz">
+                                                    <frame key="frameInset" minX="33" minY="8" width="112" height="40"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="etiqueta" destination="gDu-CW-ASz" id="HBf-dp-HHX"/>
+                                            <outlet property="imagen" destination="kGM-dZ-hLz" id="lpB-IL-JKY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

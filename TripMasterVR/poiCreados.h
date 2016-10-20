@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Quickblox/Quickblox.h>
 
-@interface tablePoiCreated : UITableViewCell{
+@interface poiCreados : UITableViewCell{
     IBOutlet UIImageView *imagen;
     IBOutlet UILabel *etiqueta;
     
