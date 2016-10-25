@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <Quickblox/Quickblox.h>
 #import "QBAdmin.h"
+#import "NotificacionTest.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, QBAdminDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate, QBAdminDelegate>{
+    NotificacionTest *nottest;
+}
+
 
 @property (strong, nonatomic) QBAdmin *qbAdmin;
 @property (strong, nonatomic) QBUUser *usuario;

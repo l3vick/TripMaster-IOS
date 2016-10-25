@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "NotificacionTest.h"
 @interface AppDelegate ()
 
 @end
@@ -27,7 +27,21 @@
     qbAdmin.delegate = self;
    // [qbAdmin login:@"NOMBRE" password:@"PASSWORD"];
    // NSLog(@"1111111");
-    return YES;
+    [NSTimer scheduledTimerWithTimeInterval:2.0
+                                     target:self
+                                   selector:@selector(targetMethod:)
+                                   userInfo:nil
+                                    repeats:YES];
+
+ 
+        return YES;
+}
+
+-(void)targetMethod:(NSTimer *)timer {
+    NSNotificationCenter *notcen = [NSNotificationCenter defaultCenter];
+    [notcen
+     postNotificationName:@"TestNotification"
+     object:self];
 }
 
 -(void)loginSuccess:(BOOL)blsuccess{

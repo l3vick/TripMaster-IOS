@@ -23,6 +23,17 @@
     [self getAppDelegate].qbAdmin.delegate = self;
     // Do any additional setup after loading the view, typically from a nib.
     // UIImage *imagen1 = [UIImage imageNamed:@"world-monuments-collage-wall-sticker-7135.png"];
+    NSNotificationCenter *notcen = [NSNotificationCenter defaultCenter];
+    
+    [notcen addObserver:self
+               selector:@selector(receiveTestNotification:)
+                   name:@"TestNotification"
+                 object:nil];
+    
+    [notcen addObserver:self
+               selector:@selector(receiveTestNotification:)
+                   name:@"MiNotificacion"
+                 object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +50,18 @@
     [[self getAppDelegate].qbAdmin login:user.text password:passw.text];
     
 }
+- (void) receiveTestNotification:(NSNotification *) notification
+{
+    // [notification name] should always be @"TestNotification"
+    // unless you use this method for observation of other notifications
+    // as well.
+    
+    if ([[notification name] isEqualToString:@"TestNotification"])
+        NSLog (@"EJECUTO TestNotification ViewController");
+    if ([[notification name] isEqualToString:@"MiNotificacion"])
+        NSLog (@"EJECUTO MiNotificacion");
+}
+
 
 -(void)loginSuccess:(BOOL)blsuccess{
     if(blsuccess){

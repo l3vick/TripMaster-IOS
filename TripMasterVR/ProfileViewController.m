@@ -60,7 +60,8 @@
             
             
             nsObjetosLeidos2= objects;
-            [tabla2 reloadData];
+            
+                [tabla2 reloadData];
         }
         
         
@@ -68,12 +69,22 @@
         // error handling
         NSLog(@"Response error: %@", [response.error description]);
     }];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(receiveTestNotification:
+                                                                )
+                                                 name:@"TestNotification"
+                                               object: nil];
 
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)receiveTestNotification:(NSNotification *) notificacion {
+    if ([[notificacion name] isEqualToString:@"TestNotification"])
+        NSLog(@"Succesfully teceived th etest notification");
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
         NSInteger num = 0;

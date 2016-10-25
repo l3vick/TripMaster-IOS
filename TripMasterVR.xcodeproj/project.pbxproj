@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252F2E791DBF3FA000697822 /* NotificacionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 252F2E781DBF3FA000697822 /* NotificacionTest.m */; };
 		2540AA331DA3B5F200AD525A /* world.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2540AA321DA3B5F200AD525A /* world.jpg */; };
 		25484F8C1DB8C6AE00756570 /* poiCreados.m in Sources */ = {isa = PBXBuildFile; fileRef = 25484F8B1DB8C6AE00756570 /* poiCreados.m */; };
 		2554AC471DA65FF7008F8A8C /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2554AC461DA65FF7008F8A8C /* ProfileViewController.m */; };
@@ -70,6 +71,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252F2E771DBF3FA000697822 /* NotificacionTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificacionTest.h; sourceTree = "<group>"; };
+		252F2E781DBF3FA000697822 /* NotificacionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificacionTest.m; sourceTree = "<group>"; };
 		2540AA321DA3B5F200AD525A /* world.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = world.jpg; sourceTree = "<group>"; };
 		25484F8A1DB8C6AE00756570 /* poiCreados.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = poiCreados.h; sourceTree = "<group>"; };
 		25484F8B1DB8C6AE00756570 /* poiCreados.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = poiCreados.m; sourceTree = "<group>"; };
@@ -177,6 +180,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		252F2E761DBF3F7100697822 /* Notificaciones */ = {
+			isa = PBXGroup;
+			children = (
+				252F2E771DBF3FA000697822 /* NotificacionTest.h */,
+				252F2E781DBF3FA000697822 /* NotificacionTest.m */,
+			);
+			name = Notificaciones;
+			sourceTree = "<group>";
+		};
 		258F76CD1DB61AD3008A0DE7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +201,7 @@
 		2592061B1D9D18C200B68D56 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				252F2E761DBF3F7100697822 /* Notificaciones */,
 				258F76CD1DB61AD3008A0DE7 /* Supporting Files */,
 				2C7A6BEB1DA3BBE700D84F6E /* Home */,
 				2C4BC7261D9D1E9C00E9A9A9 /* Profile */,
@@ -482,6 +495,7 @@
 				25DD40471D9A588300212265 /* AppDelegate.m in Sources */,
 				2554AC471DA65FF7008F8A8C /* ProfileViewController.m in Sources */,
 				259206321D9D24A900B68D56 /* login.m in Sources */,
+				252F2E791DBF3FA000697822 /* NotificacionTest.m in Sources */,
 				2592062F1D9D249800B68D56 /* loginOptions.m in Sources */,
 				258F76D01DB61AFF008A0DE7 /* QBAdmin.m in Sources */,
 				2CC5B45D1DA401750089D6DB /* MenuViewController.m in Sources */,
