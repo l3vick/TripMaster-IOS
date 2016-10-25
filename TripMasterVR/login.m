@@ -70,7 +70,7 @@
 -(void)loginSuccess:(BOOL)blsuccess{
     if(blsuccess){
         UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Home" bundle:nil];
-        UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"MapViewController"];
+        UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"HomeView"];
         
         [[UIApplication sharedApplication].keyWindow setRootViewController:vc];
         

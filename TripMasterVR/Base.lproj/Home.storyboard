@@ -85,7 +85,7 @@
         <!--Map-->
         <scene sceneID="4zq-d6-Zgj">
             <objects>
-                <viewController id="dbq-oK-4yP" customClass="SWRevealViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeView" id="dbq-oK-4yP" customClass="SWRevealViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SSd-q7-iG1"/>
                         <viewControllerLayoutGuide type="bottom" id="Q0P-yC-mYd"/>
