@@ -7,6 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWRevealViewController.h"
+#import "MapViewController.h"
+#import "HomeProfileViewController.h"
 
 @interface MenuViewController : UITableViewController
 

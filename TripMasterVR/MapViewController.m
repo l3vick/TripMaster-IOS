@@ -29,6 +29,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    locationManager = [CLLocationManager new];
+    locationManager.delegate = self;
+    locationManager.distanceFilter = kCLDistanceFilterNone;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager requestWhenInUseAuthorization];
+    [locationManager startUpdatingLocation];
+    
     self.geocoder = [[ILGeoNamesLookup alloc] initWithUserID:kGeoNamesAccountName];
     geocoder.delegate = self;
     
@@ -41,7 +49,7 @@
         [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     }
     
-    [self getPoiAtLocation];
+    
     
     
 }
@@ -51,8 +59,8 @@
     // Dispose of any resources that can be recreated.
 }
 #pragma API Request
-- (void)getPoiAtLocation{
-    [geocoder findNearbyPlaceNameForLatitude:40.538996 longitude:-3.896759];
+- (void)getPoiAtLocation: (CLLocationCoordinate2D) coord{
+    [geocoder findNearbyPlaceNameForLatitude:coord.latitude longitude:coord.longitude];
 }
 
 -(void)geoNamesLookup:(ILGeoNamesLookup *)handler networkIsActive:(BOOL)isActive{
@@ -66,7 +74,7 @@
         for (int i=0; i<[geoNames count]; i++) {
             NSDictionary *temp=geoNames[i];
             [temp objectForKey:kILGeoNamesLatitudeKey] ;
-            CLLocationCoordinate2D geos;// = CLLocationCoordinate2DMake(lat,[temp objectForKey:kILGeoNamesLongitudeKey]);
+            CLLocationCoordinate2D geos;
             geos.latitude=[[temp objectForKey:kILGeoNamesLatitudeKey] doubleValue];
             geos.longitude=[[temp objectForKey:kILGeoNamesLongitudeKey] doubleValue];
             MKPlacemark* marker = [[MKPlacemark alloc] initWithCoordinate:geos addressDictionary:nil];
@@ -82,7 +90,8 @@
 -(void)geoNamesLookup:(ILGeoNamesLookup *)handler didFailWithError:(NSError *)error{
     NSLog(@"--------------->>>>>>>>>>>3333333 %@ ",error);
 }
-#pragma Map Handler
+#pragma Map Handler     
+/*
 - (MKAnnotationView *) mapView: (MKMapView *) mapView viewForAnnotation: (id<MKAnnotation>) annotation {
     MKPinAnnotationView *pin = (MKPinAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier: @"annotation_ID"];
     if (pin == nil) {
@@ -93,7 +102,59 @@
     pin.pinColor = MKPinAnnotationColorRed;
     pin.animatesDrop = YES;
     return pin;
+    
+    
+    */
+//------------ Current Location Address-----
+-(void)CurrentLocationIdentifier
+{
+    //---- For getting current gps location
+    
+    //------
 }
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    
+    currentLocation = [locations objectAtIndex:0];
+    [self getPoiAtLocation:currentLocation.coordinate];
+    /*
+    currentLocation = [locations objectAtIndex:0];
+    [locationManager stopUpdatingLocation];
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init] ;
+    [geocoder reverseGeocodeLocation:currentLocation completionHandler:^(NSArray *placemarks, NSError *error)
+     {
+         if (!(error))
+         {
+             CLPlacemark *placemark = [placemarks objectAtIndex:0];
+             NSLog(@"\nCurrent Location Detected\n");
+             NSLog(@"placemark %@",placemark);
+             NSString *locatedAt = [[placemark.addressDictionary valueForKey:@"FormattedAddressLines"] componentsJoinedByString:@", "];
+             NSString *Address = [[NSString alloc]initWithString:locatedAt];
+             NSString *Area = [[NSString alloc]initWithString:placemark.locality];
+             NSString *Country = [[NSString alloc]initWithString:placemark.country];
+             NSString *CountryArea = [NSString stringWithFormat:@"%@, %@", Area,Country];
+             NSLog(@"%@",CountryArea);
+         }
+         else
+         {
+             NSLog(@"Geocode failed with error %@", error);
+             NSLog(@"\nCurrent Location Not Detected\n");
+             //return;
+         }
+         /*---- For more results
+          placemark.region);
+          placemark.country);
+          placemark.locality);
+          placemark.name);
+          placemark.ocean);
+          placemark.postalCode);
+          placemark.subLocality);
+          placemark.location);
+          ------*/
+     //}];
+}
+
+
 
 
 @end

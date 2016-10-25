@@ -15,13 +15,21 @@
 @implementation HomeProfileViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad]; 
+    [super viewDidLoad];
+    [self presentSecondViewControllerFromViewController:self];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void) presentSecondViewControllerFromViewController:(UIViewController *)sourceController
+{
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Profile" bundle:nil];
+    UIViewController *vc = [mainStoryboard instantiateViewControllerWithIdentifier:@"ProfileViewController"];
+    
+    [[UIApplication sharedApplication].keyWindow setRootViewController:vc];}
 
 /*
 #pragma mark - Navigation

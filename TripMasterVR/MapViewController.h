@@ -10,14 +10,17 @@
 #import <MapKit/MapKit.h>
 #import "SWRevealViewController.h"
 #import "ILGeoNamesLookup.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
 static NSString *kGeoNamesAccountName = @"rozularen";
 
-@interface MapViewController : UIViewController<ILGeoNamesLookupDelegate, MKMapViewDelegate>{
+@interface MapViewController : UIViewController<ILGeoNamesLookupDelegate, CLLocationManagerDelegate, MKMapViewDelegate>{
     
     
     IBOutlet MKMapView *mapView;
-    
+    CLLocationManager *locationManager;
+    CLLocation *currentLocation;
+
 }
 @property (nonatomic, retain) ILGeoNamesLookup *geocoder;
 @property  (nonatomic, strong) IBOutlet UIBarButtonItem *sidebarButton;
