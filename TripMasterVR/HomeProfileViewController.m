@@ -2,7 +2,7 @@
 //  HomeProfileViewController.m
 //  TripMasterVR
 //
-//  Created by Marcos Stival Tomé on 11/10/16.
+//  Created by Marcos Stival Tomé on 25/10/16.
 //  Copyright © 2016 Pablo Rojas Cifre. All rights reserved.
 //
 
@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     [self presentSecondViewControllerFromViewController:self];
 }
 

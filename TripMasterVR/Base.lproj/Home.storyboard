@@ -124,12 +124,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NIS-sc-P0o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-596" y="-244"/>
+            <point key="canvasLocation" x="-794" y="-42"/>
         </scene>
         <!--Map-->
         <scene sceneID="K8v-rP-k4L">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4xp-KR-bii" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MapViewController" automaticallyAdjustsScrollViewInsets="NO" id="4xp-KR-bii" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" id="HP4-iP-Ahx"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vS0-9q-X1s">
@@ -162,7 +162,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sYR-8u-ZW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1254" y="-17.25"/>
+            <point key="canvasLocation" x="-1494" y="-41"/>
         </scene>
     </scenes>
     <resources>
