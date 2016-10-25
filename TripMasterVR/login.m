@@ -34,6 +34,10 @@
                selector:@selector(receiveTestNotification:)
                    name:@"MiNotificacion"
                  object:nil];
+    [notcen
+     postNotificationName:@"TestNotification"
+     object:self];
+    
 }
 
 - (void)didReceiveMemoryWarning {

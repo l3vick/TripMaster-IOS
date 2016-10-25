@@ -27,12 +27,14 @@
     qbAdmin.delegate = self;
    // [qbAdmin login:@"NOMBRE" password:@"PASSWORD"];
    // NSLog(@"1111111");
-    [NSTimer scheduledTimerWithTimeInterval:2.0
+    nottest=[[NotificacionTest alloc] init];
+
+   /* [NSTimer scheduledTimerWithTimeInterval:2.0
                                      target:self
                                    selector:@selector(targetMethod:)
                                    userInfo:nil
                                     repeats:YES];
-
+*/
  
         return YES;
 }
@@ -60,6 +62,14 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    //Se ejectuta cuando la aplicacion entra en segundo plano
+    
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    notification.fireDate = [[NSDate date] dateByAddingTimeInterval:60*60*24];
+    notification.alertBody = @"24 hours passed since last visit :(";
+    [[UIApplication sharedApplication] scheduleLocalNotification:notification];
+    
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
